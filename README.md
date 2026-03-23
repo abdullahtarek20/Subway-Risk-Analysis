@@ -76,7 +76,7 @@ Monte Carlo simulation for an underground metro station construction project in 
 ## Author
 
 Abdullah Tarek  
-[LinkedIn Profile]  
+ 
 Abdullahtarek.003@gmail.com
 
 ---
