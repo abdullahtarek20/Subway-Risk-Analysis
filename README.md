@@ -63,12 +63,11 @@ Monte Carlo simulation for an underground metro station construction project in 
 
 ## Files
 
+- `Monte_Carlo_Simulation_Formulas.xlsx` – Excel simulation with formulas (dynamic, shows methodology)
+- `Monte_Carlo_Simulation_Results.xlsx` – Excel simulation with pasted values (static, shows final results)
 - `Primavera_P6_Export.xer` – Original schedule with resources
 - `Primavera_P6_Export.mpp` – MS Project export
-- `Monte_Carlo_Simulation.xlsx` – Excel simulation (3 scenarios, 10,000 iterations)
 - `PowerBI_Dashboard.pbix` – Interactive dashboard (5 pages)
-- `Risk_Analysis_@RISK.pbix` – @RISK sensitivity outputs (tornado chart)
-- `Primavera_Risk_Analysis.pra` – Primavera Risk Analysis file
 - `Screenshots/` – All Power BI and software screenshots
 
 ---
