@@ -19,7 +19,7 @@ Monte Carlo simulation for an underground metro station construction project in 
 ### Risk Analysis
 - Excel – Monte Carlo simulation (10,000 iterations, 3 scenarios)
 - @RISK – Validation and sensitivity analysis (tornado charts)
-- Primavera Risk Analysis – Schedule risk analysis, criticality index
+- **Primavera Risk Analysis** – Advanced schedule and cost risk analysis
 
 ### Visualization
 - Power BI – Interactive dashboard (duration histogram, cost histogram, scenario comparison, S-curves, contingency)
@@ -28,14 +28,28 @@ Monte Carlo simulation for an underground metro station construction project in 
 
 ## Key Results
 
+### Deterministic (Primavera P6)
 | Metric | Value |
 |--------|-------|
-| Deterministic Duration | 817 days |
-| Monte Carlo P50 | 1,239 days |
-| Monte Carlo P80 | 1,257 days |
-| Cost P50 | $24.77 million |
-| Cost P80 | $25.12 million |
+| Duration | 817 days |
+| Direct Cost | $2,022,065 |
+
+### Monte Carlo (Excel – Comprehensive Scenario)
+| Metric | Value |
+|--------|-------|
+| P50 Duration | 1,239 days |
+| P80 Duration | 1,257 days |
+| P50 Cost | $24.77 million |
+| P80 Cost | $25.12 million |
 | Cost Contingency | $357,096 |
+
+### Primavera Risk Analysis
+| Metric | Value |
+|--------|-------|
+| P50 Duration | 940 days |
+| P80 Duration | 953 days |
+| P80 Cost | $2,041,000 |
+| Top Risk Drivers | Architectural Finishes (28%), MEP Rough-ins (28%) |
 
 ---
 
@@ -61,25 +75,61 @@ Monte Carlo simulation for an underground metro station construction project in 
 
 ---
 
+## Primavera Risk Analysis Outputs
+
+- Duration, Cost, and Finish Date Distributions
+- Schedule Sensitivity Index
+- Cost Sensitivity Index
+- Criticality Index
+- Cruciality Index
+- Scatter Plot (Cost vs Finish Date)
+- Probabilistic Cash Flow
+- Schedule Check Report
+- Risk Register (140 activities)
+
+---
+
 ## Files
 
-- `Monte_Carlo_Simulation_Formulas.xlsx` – Excel simulation with formulas (dynamic, shows methodology)
-- `Monte_Carlo_Simulation_Results.xlsx` – Excel simulation with pasted values (static, shows final results)
+### Primavera P6
 - `Primavera_P6_Export.xer` – Original schedule with resources
+
+### MS Project
 - `Primavera_P6_Export.mpp` – MS Project export
+
+### Excel Monte Carlo
+- `Monte_Carlo_Simulation_Formulas.xlsx` – Excel simulation with formulas
+- `Monte_Carlo_Simulation_Results.xlsx` – Excel simulation with static results
+
+### Power BI
 - `PowerBI_Dashboard.pbix` – Interactive dashboard (5 pages)
+
+### Primavera Risk Analysis
+- `Primavera_Risk_Analysis/` – Folder with all PRA outputs
+  - `PRA_Duration_Distribution.png`
+  - `PRA_Cost_Distribution.png`
+  - `PRA_Finish_Date_Distribution.png`
+  - `PRA_Schedule_Sensitivity_Index.png`
+  - `PRA_Cost_Sensitivity.png`
+  - `PRA_Criticality_Index.png`
+  - `PRA_Cruciality_Index.png`
+  - `PRA_Scatter_Plot.png`
+  - `PRA_Cash_Flow.png`
+  - `PRA_Schedule_Check_Report.pdf`
+  - `PRA_Risk_Register.xlsx`
+
+### Screenshots
 - `Screenshots/` – All Power BI and software screenshots
 
 ---
 
 ## Author
 
-Abdullah Tarek  
- 
+Abdullah Tarek
 Abdullahtarek.003@gmail.com
 
 ---
 
 ## License
 
-This project is part of my bachelor thesis at German University In Cairo ( GUC ).
+This project is part of my bachelor thesis at the German University In Cairo ( GUC ).
