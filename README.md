@@ -195,114 +195,43 @@ This project demonstrates a comprehensive probabilistic risk analysis for an und
 ---
 
 ## Project Structure
+
+```text
 Subway-Risk-Analysis/
 │
 ├── Revit/
-│ ├── UMS_Model.rvt
-│ └── *_Material_Takeoff.csv
+│   ├── UMS_Model.rvt
+│   └── *_Material_Takeoff.csv
 │
 ├── Primavera_P6/
-│ └── UMS.xlsx
+│   └── UMS.xlsx
 │
 ├── MS_Project/
-│ └── UMS_MSProject.mpp
+│   └── UMS_MSProject.mpp
 │
 ├── Excel_Monte_Carlo/
-│ └── Monte_Carlo_UMS.xlsx
+│   └── Monte_Carlo_UMS.xlsx
 │
 ├── Primavera_Risk_Analysis/
-│ ├── PRA_Duration_Distribution.pdf
-│ ├── PRA_Cost_Distribution.pdf
-│ ├── PRA_Finish_Date_Distribution.pdf
-│ ├── PRA_Schedule_Sensitivity_Index.pdf
-│ ├── PRA_Cost_Sensitivity.pdf
-│ ├── PRA_Criticality_Index.pdf
-│ └── PRA_Scatter_Plot.pdf
+│   ├── PRA_Duration_Distribution.pdf
+│   ├── PRA_Cost_Distribution.pdf
+│   ├── PRA_Finish_Date_Distribution.pdf
+│   ├── PRA_Schedule_Sensitivity_Index.pdf
+│   ├── PRA_Cost_Sensitivity.pdf
+│   ├── PRA_Criticality_Index.pdf
+│   └── PRA_Scatter_Plot.pdf
 │
 ├── Python_Software/
-│ ├── try13.py
-│ └── requirements.txt
+│   ├── try13.py
+│   └── requirements.txt
 │
 ├── Power_BI/
-│ └── UMS_Risk_Dashboard.pbix
+│   └── UMS_Risk_Dashboard.pbix
 │
 ├── Screenshots/
-│ ├── Python_Results.png
-│ ├── Excel_Results.png
-│ ├── PRA_Results.png
-│ └── PowerBI_Dashboard.png
+│   ├── Python_Results.png
+│   ├── Excel_Results.png
+│   ├── PRA_Results.png
+│   └── PowerBI_Dashboard.png
 │
 └── README.md
-
-text
-
----
-
-## Installation and Usage
-
-```bash
-git clone https://github.com/AbdullahTarek/Subway-Risk-Analysis.git
-cd Subway-Risk-Analysis/Python_Software
-pip install -r requirements.txt
-streamlit run try13.py
-Requirements
-text
-streamlit>=1.28.0
-pandas>=1.5.0
-numpy>=1.24.0
-plotly>=5.14.0
-openpyxl>=3.0.0
-requests>=2.28.0
-scikit-learn>=1.2.0
-scipy>=1.10.0
-Validation
-Metric	Python	PRA	Difference	Status
-P50 Duration	1,766 days	1,727 days	+2.3%	Excellent
-P80 Duration	1,889 days	1,817 days	+4.0%	Excellent
-P50 Cost	$66.73M	$64.19M	+4.0%	Excellent
-P80 Cost	$70.03M	$65.25M	+7.3%	Acceptable
-Key Findings
-Deterministic schedules are systematically optimistic – 1,693 days at only 24th percentile
-
-Correlation has massive impact – +61.8% duration from independent to comprehensive
-
-Weather and geopolitical risks are primary drivers – 31.0% and 26.4% impact
-
-Python software is validated – Results within 2.3% of industry-standard PRA
-
-Author
-Abdullah Tarek
-
-Email: Abdullahtarek.003@gmail.com
-
-Bachelor Thesis | German University in Cairo (GUC)
-
-2026
-
-License
-This project is part of my bachelor thesis at the German University in Cairo (GUC). All rights reserved.
-
-Acknowledgments
-German University in Cairo (GUC) – Faculty of Engineering
-
-Primavera Risk Analysis (Oracle) – Industry-standard validation tool
-
-Compass International – Regional construction cost database
-
-Jarkas and Horner (2015) – Reinforced concrete productivity benchmarks
-
-References
-AACE International (2022). Recommended Practice 57R-09
-
-Flyvbjerg, B., Holm, M. S., and Buhl, S. (2002)
-
-Jarkas, A. M., and Horner, R. M. W. (2015)
-
-PMI (2021). PMBOK Guide – 7th Edition
-
-Star This Repository
-If you found this project useful for your research or thesis, please consider giving it a star.
-
-text
-
-**Copy everything above from the first line to the last line and paste it into your README.md file. The project structure is now properly formatted inside triple backticks.**
