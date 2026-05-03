@@ -1,66 +1,65 @@
-# 🚇 Underground Metro Station (UMS) - Risk Analysis Platform
+# Underground Metro Station (UMS) - Risk Analysis Platform
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/streamlit-1.28.0-red.svg)](https://streamlit.io)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 **Monte Carlo simulation for underground metro station construction using Primavera P6, Excel, Primavera Risk Analysis (PRA), Python, Power BI, Revit, and MS Project.**
 
-> 🎓 **Bachelor Thesis Project** | German University in Cairo (GUC) | Risk Analysis Using Monte Carlo Simulation
+> Bachelor Thesis Project | German University in Cairo (GUC) | Risk Analysis Using Monte Carlo Simulation
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Key Results](#key-results)
-- [Tools & Technologies](#tools--technologies)
+- [Tools and Technologies](#tools-and-technologies)
 - [Methodology](#methodology)
 - [Risk Factors Modeled](#risk-factors-modeled)
 - [Results Comparison](#results-comparison)
 - [Project Structure](#project-structure)
-- [Installation & Usage](#installation--usage)
+- [Installation and Usage](#installation-and-usage)
 - [Validation](#validation)
 - [Author](#author)
 - [License](#license)
 
 ---
 
-## 📌 Overview
+## Overview
 
-This project demonstrates a comprehensive **probabilistic risk analysis** for an underground metro station construction project in the Middle East. The analysis integrates:
+This project demonstrates a comprehensive probabilistic risk analysis for an underground metro station construction project in the Middle East. The analysis integrates:
 
-- **Revit 3D Model** – Detailed BIM model with material quantities (42,264 m³ concrete)
-- **Primavera P6** – Deterministic schedule (140 activities, 1,693 days baseline)
-- **Excel Monte Carlo** – Custom spreadsheet model (10,000 iterations, 3 scenarios)
-- **Primavera Risk Analysis (PRA)** – Industry-standard validation benchmark
-- **Custom Python Software** – Open-source risk analysis tool (original contribution)
-- **Power BI** – Interactive dashboard for visualization
-- **MS Project** – Schedule interoperability demonstration
+- Revit 3D Model – Detailed BIM model with material quantities (42,264 m3 concrete)
+- Primavera P6 – Deterministic schedule (140 activities, 1,693 days baseline)
+- Excel Monte Carlo – Custom spreadsheet model (10,000 iterations, 3 scenarios)
+- Primavera Risk Analysis (PRA) – Industry-standard validation benchmark
+- Custom Python Software – Open-source risk analysis tool (original contribution)
+- Power BI – Interactive dashboard for visualization
+- MS Project – Schedule interoperability demonstration
 
-### 🎯 Key Achievements
+### Key Achievements
 
 | Achievement | Result |
 |-------------|--------|
-| **Python Software Validation** | Within 2.3% of PRA for P50 duration ✅ |
-| **Correlation Impact** | +61.8% duration increase from independent to comprehensive scenario |
-| **Open-Source Alternative** | Free, transparent, extensible risk analysis tool |
-| **Comprehensive Risk Model** | 13 systemic risk factors, 10,000 iterations |
+| Python Software Validation | Within 2.3% of PRA for P50 duration |
+| Correlation Impact | +61.8% duration increase from independent to comprehensive |
+| Open-Source Alternative | Free, transparent, extensible risk analysis tool |
+| Comprehensive Risk Model | 13 systemic risk factors, 10,000 iterations |
 
 ---
 
-## 📊 Key Results
+## Key Results
 
 ### Deterministic Baseline (Primavera P6 + Revit)
 
 | Metric | Value |
 |--------|-------|
-| **Total Project Duration** | **1,693 days** |
+| Total Project Duration | 1,693 days |
 | Number of Activities | 140 |
-| Critical Path Activities | ~42 |
+| Critical Path Activities | 42 |
 | Direct Cost | $51,276,399 |
 | Indirect Cost | $12,765,220 |
-| **Total Baseline Cost** | **$64,041,619** |
+| Total Baseline Cost | $64,041,619 |
 | Indirect Rate | $7,540/day |
 
 ### Primavera Risk Analysis (PRA) – Industry Benchmark
@@ -68,17 +67,17 @@ This project demonstrates a comprehensive **probabilistic risk analysis** for an
 | Percentile | Duration (days) | Finish Date | Cost ($) |
 |------------|----------------|-------------|----------|
 | Deterministic (24/22%) | 1,693 | 23/10/2030 | $64,041,619 |
-| **P50** | **1,727** | **25/11/2030** | **$64,192,025** |
-| **P80** | **1,817** | **24/02/2031** | **$65,248,704** |
-| **P90** | **1,867** | **15/04/2031** | **$65,858,695** |
+| P50 | 1,727 | 25/11/2030 | $64,192,025 |
+| P80 | 1,817 | 24/02/2031 | $65,248,704 |
+| P90 | 1,867 | 15/04/2031 | $65,858,695 |
 
 ### Custom Python Software – Original Contribution
 
 | Percentile | Duration (days) | Cost ($) |
 |------------|----------------|----------|
-| **P50** | **1,766** | **$66,734,894** |
-| **P80** | **1,889** | **$70,031,675** |
-| **P90** | **1,967** | **$72,340,442** |
+| P50 | 1,766 | $66,734,894 |
+| P80 | 1,889 | $70,031,675 |
+| P90 | 1,967 | $72,340,442 |
 
 ### Excel Monte Carlo – Comprehensive Scenario
 
@@ -91,26 +90,26 @@ This project demonstrates a comprehensive **probabilistic risk analysis** for an
 
 ---
 
-## 🛠 Tools & Technologies
+## Tools and Technologies
 
 | Category | Tools |
 |----------|-------|
-| **BIM & Modeling** | Autodesk Revit |
-| **Scheduling** | Primavera P6, MS Project |
-| **Risk Analysis** | Excel, Primavera Risk Analysis (PRA), Python (Custom) |
-| **Visualization** | Power BI, Plotly |
+| BIM and Modeling | Autodesk Revit |
+| Scheduling | Primavera P6, MS Project |
+| Risk Analysis | Excel, Primavera Risk Analysis (PRA), Python (Custom) |
+| Visualization | Power BI, Plotly |
 
 ---
 
-## 🔬 Methodology
+## Methodology
 
 ### Three Simulation Scenarios
 
 | Scenario | Description | Risk Factors |
 |----------|-------------|--------------|
-| **Scenario 1** | Independent durations | None |
-| **Scenario 2** | Basic correlation | 5 operational risks |
-| **Scenario 3** | Comprehensive correlation | 13 systemic risks |
+| Scenario 1 | Independent durations | None |
+| Scenario 2 | Basic correlation | 5 operational risks |
+| Scenario 3 | Comprehensive correlation | 13 systemic risks |
 
 ### Simulation Parameters
 
@@ -123,7 +122,7 @@ This project demonstrates a comprehensive **probabilistic risk analysis** for an
 
 ### Revit 3D Model Quantities
 
-| Element | Volume (m³) |
+| Element | Volume (m3) |
 |---------|-------------|
 | Diaphragm Walls | 10,537 |
 | Base Slab (Raft) | 8,512 |
@@ -131,13 +130,13 @@ This project demonstrates a comprehensive **probabilistic risk analysis** for an
 | Roof Slab | 5,914 |
 | Columns | 3,536 |
 | Excavation | 3,909 |
-| **Total Concrete** | **42,264 m³** |
+| Total Concrete | 42,264 |
 
-> 🎥 **Revit 3D Model Video** – *[Link to Revit 3D model video will be added here]*
+> Revit 3D Model Video – [Link to Revit 3D model video will be added here]
 
 ---
 
-## ⚠️ Risk Factors Modeled
+## Risk Factors Modeled
 
 ### Operational Risks (5 factors)
 
@@ -164,35 +163,146 @@ This project demonstrates a comprehensive **probabilistic risk analysis** for an
 
 ---
 
-## 📈 Results Comparison
+## Results Comparison
 
 ### Duration Comparison
 
 | Metric | Excel | PRA | Python | Python vs PRA |
 |--------|-------|-----|--------|---------------|
-| P50 Duration | 2,943 days | 1,727 days | **1,766 days** | **+2.3%** ✅ |
-| P80 Duration | 2,960 days | 1,817 days | **1,889 days** | **+4.0%** ✅ |
-| P90 Duration | N/A | 1,867 days | **1,967 days** | **+5.4%** ✅ |
+| P50 Duration | 2,943 days | 1,727 days | 1,766 days | +2.3% |
+| P80 Duration | 2,960 days | 1,817 days | 1,889 days | +4.0% |
+| P90 Duration | N/A | 1,867 days | 1,967 days | +5.4% |
 
 ### Cost Comparison
 
 | Metric | Excel | PRA | Python | Python vs PRA |
 |--------|-------|-----|--------|---------------|
-| P50 Cost | $69.76M | $64.19M | **$66.73M** | **+4.0%** ✅ |
-| P80 Cost | $69.88M | $65.25M | **$70.03M** | **+7.3%** ✅ |
-| P90 Cost | N/A | $65.86M | **$72.34M** | **+9.8%** ✅ |
+| P50 Cost | $69.76M | $64.19M | $66.73M | +4.0% |
+| P80 Cost | $69.88M | $65.25M | $70.03M | +7.3% |
+| P90 Cost | N/A | $65.86M | $72.34M | +9.8% |
 
 ### Validation Summary
 
 | Metric | Python vs PRA | Classification |
 |--------|---------------|----------------|
-| P50 Duration | +2.3% | ✅ Excellent |
-| P80 Duration | +4.0% | ✅ Excellent |
-| P50 Cost | +4.0% | ✅ Excellent |
-| P80 Cost | +7.3% | ⚠️ Acceptable |
+| P50 Duration | +2.3% | Excellent |
+| P80 Duration | +4.0% | Excellent |
+| P50 Cost | +4.0% | Excellent |
+| P80 Cost | +7.3% | Acceptable |
 
-> **All results within ±10% industry tolerance (AACE International, 2022)**
+> All results within +/-10% industry tolerance (AACE International, 2022)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
+Subway-Risk-Analysis/
+│
+├── Revit/
+│ ├── UMS_Model.rvt
+│ └── *_Material_Takeoff.csv
+│
+├── Primavera_P6/
+│ └── UMS.xlsx
+│
+├── MS_Project/
+│ └── UMS_MSProject.mpp
+│
+├── Excel_Monte_Carlo/
+│ └── Monte_Carlo_UMS.xlsx
+│
+├── Primavera_Risk_Analysis/
+│ ├── PRA_Duration_Distribution.pdf
+│ ├── PRA_Cost_Distribution.pdf
+│ ├── PRA_Finish_Date_Distribution.pdf
+│ ├── PRA_Schedule_Sensitivity_Index.pdf
+│ ├── PRA_Cost_Sensitivity.pdf
+│ ├── PRA_Criticality_Index.pdf
+│ └── PRA_Scatter_Plot.pdf
+│
+├── Python_Software/
+│ ├── try13.py
+│ └── requirements.txt
+│
+├── Power_BI/
+│ └── UMS_Risk_Dashboard.pbix
+│
+├── Screenshots/
+│ ├── Python_Results.png
+│ ├── Excel_Results.png
+│ ├── PRA_Results.png
+│ └── PowerBI_Dashboard.png
+│
+└── README.md
+
+text
+
+---
+
+## Installation and Usage
+
+```bash
+git clone https://github.com/AbdullahTarek/Subway-Risk-Analysis.git
+cd Subway-Risk-Analysis/Python_Software
+pip install -r requirements.txt
+streamlit run try13.py
+Requirements
+text
+streamlit>=1.28.0
+pandas>=1.5.0
+numpy>=1.24.0
+plotly>=5.14.0
+openpyxl>=3.0.0
+requests>=2.28.0
+scikit-learn>=1.2.0
+scipy>=1.10.0
+Validation
+Metric	Python	PRA	Difference	Status
+P50 Duration	1,766 days	1,727 days	+2.3%	Excellent
+P80 Duration	1,889 days	1,817 days	+4.0%	Excellent
+P50 Cost	$66.73M	$64.19M	+4.0%	Excellent
+P80 Cost	$70.03M	$65.25M	+7.3%	Acceptable
+Key Findings
+Deterministic schedules are systematically optimistic – 1,693 days at only 24th percentile
+
+Correlation has massive impact – +61.8% duration from independent to comprehensive
+
+Weather and geopolitical risks are primary drivers – 31.0% and 26.4% impact
+
+Python software is validated – Results within 2.3% of industry-standard PRA
+
+Author
+Abdullah Tarek
+
+Email: Abdullahtarek.003@gmail.com
+
+Bachelor Thesis | German University in Cairo (GUC)
+
+2026
+
+License
+This project is part of my bachelor thesis at the German University in Cairo (GUC). All rights reserved.
+
+Acknowledgments
+German University in Cairo (GUC) – Faculty of Engineering
+
+Primavera Risk Analysis (Oracle) – Industry-standard validation tool
+
+Compass International – Regional construction cost database
+
+Jarkas and Horner (2015) – Reinforced concrete productivity benchmarks
+
+References
+AACE International (2022). Recommended Practice 57R-09
+
+Flyvbjerg, B., Holm, M. S., and Buhl, S. (2002)
+
+Jarkas, A. M., and Horner, R. M. W. (2015)
+
+PMI (2021). PMBOK Guide – 7th Edition
+
+Star This Repository
+If you found this project useful for your research or thesis, please consider giving it a star.
+
+text
+
+**Copy everything above from the first line to the last line and paste it into your README.md file. The project structure is now properly formatted inside triple backticks.**
